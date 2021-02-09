@@ -11,10 +11,10 @@ $(function () {
             output_html += `<table class="table table-sm table-hover">`;
             output_html += `<caption>created ${data[i].created.slice(0,10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col" style="width:5%">track</th>`;
+            output_html += `<th scope="col" style="width:5%">#</th>`;
             output_html += `<th scope="col" colspan="2" style="width:70%">title</th>`;
             output_html += `<th scope="col" style="width:15%">difficult</th>`;
-            output_html += `<th scope="col" style="width:10%">level</th>`;
+            output_html += `<th scope="col" style="width:10%">lv.</th>`;
             output_html += `</thead>`;
             output_html += `<body>`;
             for (let index = 0; index < 3; index++) {
