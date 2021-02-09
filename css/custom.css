@@ -1,0 +1,81 @@
+/* 5 Columns */
+
+.col-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-15 {
+        width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-15 {
+        width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-15 {
+        width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-15 {
+        width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+.card,
+.list-group {
+    margin: 0.5rem;
+}
+
+nav {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);
+}
+
+table .rounded {
+    width: 64px;
+    height: 64px;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+.basic{
+    font-weight: bold;
+    color:green;
+}
+
+.advanced{
+    font-weight: bold;
+    color:orange;
+}
+
+.expert{
+    font-weight: bold;
+    color:crimson;
+}
+
+.master {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.level{
+    font-weight: bold;
+}
