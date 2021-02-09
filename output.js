@@ -12,8 +12,8 @@ $(function () {
             output_html += `<caption>created ${data[i].created.slice(0,10)}</caption>`
             output_html += `<thead>`;
             output_html += `<th scope="col" style="width:5%">#</th>`;
-            output_html += `<th scope="col" colspan="2" style="width:70%">title</th>`;
-            output_html += `<th scope="col" style="width:15%">difficult</th>`;
+            output_html += `<th scope="col" colspan="2" style="width:75%">title</th>`;
+            output_html += `<th scope="col" style="width:10%">difficult</th>`;
             output_html += `<th scope="col" style="width:10%">lv.</th>`;
             output_html += `</thead>`;
             output_html += `<body>`;
