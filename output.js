@@ -36,13 +36,13 @@ $(function () {
 
                 if (data[i].track[index].difficult != "") {
                     if (data[i].track[index].difficult == "MASTER") {
-                        output_html += `<td class="align-middle master">MASTER</td>`;
+                        output_html += `<td class="align-middle master">MAS</td>`;
                     }else if (data[i].track[index].difficult == "EXPERT") {
-                        output_html += `<td class="align-middle expert">EXPERT</td>`;
+                        output_html += `<td class="align-middle expert">EXP</td>`;
                     }else if (data[i].track[index].difficult == "ADVANCED") {
-                        output_html += `<td class="align-middle advanced">ADVANCED</td>`;
+                        output_html += `<td class="align-middle advanced">ADV</td>`;
                     }else if (data[i].track[index].difficult == "BASIC") {
-                        output_html += `<td class="align-middle basic">BASIC</td>`;
+                        output_html += `<td class="align-middle basic">BAS</td>`;
                     }
                 } else {
                     output_html += `<td class="align-middle">---</td>`;
