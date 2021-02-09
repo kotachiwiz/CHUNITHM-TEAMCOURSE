@@ -5,7 +5,7 @@ $(function () {
 
         for (let i = 0; i < data.length; i++) {
             output_html += `<div class="card">`
-            output_html += `<h4 class="card-header">${data[i].month}</h4>`;
+            output_html += `<h5 class="card-header">${data[i].month}</h5>`;
             output_html += `<div class="card-body">`;
 
             output_html += `<table class="table table-sm table-hover">`;
