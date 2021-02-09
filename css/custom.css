@@ -39,6 +39,10 @@
     }
 }
 
+body{
+    font-size: 0.8em;
+}
+
 .card,
 .list-group {
     margin: 0.5rem;
