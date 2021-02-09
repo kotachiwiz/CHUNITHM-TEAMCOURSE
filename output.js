@@ -11,10 +11,10 @@ $(function () {
             output_html += `<table class="table table-sm table-hover">`;
             output_html += `<caption>created ${data[i].created.slice(0,10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col" style="width:2.5%">#</th>`;
-            output_html += `<th scope="col" colspan="2" style="width:75%">title</th>`;
-            output_html += `<th scope="col" style="width:10%">difficult</th>`;
-            output_html += `<th scope="col" style="width:10%">lv.</th>`;
+            output_html += `<th scope="col" style="width:4%">#</th>`;
+            output_html += `<th scope="col" colspan="2" style="width:72%">title</th>`;
+            output_html += `<th scope="col" style="width:12%">difficult</th>`;
+            output_html += `<th scope="col" style="width:12%">lv.</th>`;
             output_html += `</thead>`;
             output_html += `<body>`;
             for (let index = 0; index < 3; index++) {
@@ -23,9 +23,9 @@ $(function () {
                 output_html += `<th class="align-middle" scope="row">${data[i].track[index].trackNo}</th>`;
 
                 if (data[i].track[index].image != "") {
-                    output_html += `<td class="align-middle" style="width:15%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data[i].track[index].image}.jpg"></td>`;
+                    output_html += `<td class="align-middle" style="width:12%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data[i].track[index].image}.jpg"></td>`;
                 } else {
-                    output_html += `<td class="align-middle" style="width:15%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
+                    output_html += `<td class="align-middle" style="width:12%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
                 };
 
                 if (data[i].track[index].title != "") {
