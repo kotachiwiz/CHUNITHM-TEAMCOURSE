@@ -7,13 +7,31 @@
         "date":""
     },{
         "name":"Ｆｒｅａｋ",
-        "score":0,
+        "score":3025404,
         "crear":false,
         "date":""
     },{
         "name":"Ｃｈｉｓａｋｉ",
+        "score":2995550,
+        "crear":false,
+        "date":""
+    }]
+},{
+    "courseNo": 2,
+    "record":[{
+        "name":"こたち",
         "score":0,
         "crear":false,
         "date":""
+    },{
+        "name":"Ｆｒｅａｋ",
+        "score":0,
+        "crear":false,
+        "date":"2021/02/09 18:39"
+    },{
+        "name":"Ｃｈｉｓａｋｉ",
+        "score":0,
+        "crear":false,
+        "date":"2021/02/09 19:52"
     }]
 }]

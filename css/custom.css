@@ -39,11 +39,11 @@
     }
 }
 
-body{
+body {
     font-family: 'Helvetica Neue',
-    'Helvetica',
-    'Arial',
-    sans-serif;
+        'Helvetica',
+        'Arial',
+        sans-serif;
     font-size: 0.8em;
 }
 
@@ -64,19 +64,20 @@ table .rounded {
 .alert {
     margin-bottom: 0;
 }
-.basic{
+
+.basic {
     font-weight: bold;
-    color:green;
+    color: green;
 }
 
-.advanced{
+.advanced {
     font-weight: bold;
-    color:orange;
+    color: orange;
 }
 
-.expert{
+.expert {
     font-weight: bold;
-    color:crimson;
+    color: crimson;
 }
 
 .master {
@@ -84,6 +85,26 @@ table .rounded {
     color: blueviolet;
 }
 
-.level{
+.track,.level,.result_ranking,.result_score {
     font-weight: bold;
+}
+
+.table thead th {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table {
+    border-collapse: separate !important;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.collapse .table,.collapsing .table{
+    margin-top: 16px;
+    padding: 0;
 }
