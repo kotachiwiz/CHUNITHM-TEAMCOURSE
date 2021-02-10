@@ -3,12 +3,12 @@
     "record":[{
         "name":"こたち",
         "score":0,
-        "crear":false,
+        "crear":true,
         "date":""
     },{
         "name":"Ｆｒｅａｋ",
         "score":3025404,
-        "crear":false,
+        "crear":true,
         "date":""
     },{
         "name":"Ｃｈｉｓａｋｉ",
