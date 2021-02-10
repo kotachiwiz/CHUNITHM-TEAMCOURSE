@@ -101,7 +101,10 @@ table .rounded {
 .table {
     border-collapse: separate !important;
     border-spacing: 0;
-    margin: 0;
+}
+
+.table-rec{
+    margin:0;
 }
 
 .collapse .table,.collapsing .table{

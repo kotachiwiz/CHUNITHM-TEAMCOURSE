@@ -76,7 +76,7 @@ $(function () {
                 output_html += `<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample${i}">Result Ranking</button>`;
 
                 output_html += `<div class="collapse" id="collapseExample${i}">`;
-                output_html += `<table class="table table-sm table-hover">`;
+                output_html += `<table class="table table-sm table-hover table-rec">`;
                 output_html += `<thead>`;
                 output_html += `<th scope="col" style="width:10%">#</th>`;
                 output_html += `<th scope="col">名前</th>`;
