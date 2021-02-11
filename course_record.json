@@ -1,19 +1,20 @@
 [{
     "courseNo": 1,
-    "record":[{
-        "name":"こたち",
-        "score":0,
-        "crear":true,
-        "date":""
-    },{
-        "name":"Ｆｒｅａｋ",
-        "score":3025404,
-        "crear":true,
-        "date":""
-    },{
-        "name":"Ｃｈｉｓａｋｉ",
-        "score":2995550,
-        "crear":false,
-        "date":""
-    }]
+    "record": [{
+        "name": "こたち",
+        "score": 0,
+        "crear": true,
+        "date": ""
+    }, {
+        "name": "Ｆｒｅａｋ",
+        "score": 3025404,
+        "crear": true,
+        "date": ""
+    }, {
+        "name": "Ｃｈｉｓａｋｉ",
+        "score": 2995550,
+        "crear": false,
+        "date": ""
+    }],
+    "update": "2021-02-11 22:45:23"
 }]

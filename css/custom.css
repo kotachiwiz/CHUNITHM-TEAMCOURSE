@@ -54,10 +54,12 @@ body {
 
 .nav-top {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 0.5rem;
 }
 
 .nav-bottom {
     border-top: 0.5px solid rgba(0, 0, 0, 0.125);
+    margin-top: 0.5rem;
 }
 
 table .rounded {
@@ -130,4 +132,8 @@ table .rounded {
 
 .ranking-3 {
     background-color: chocolate;
+}
+
+.btn-group{
+    margin: 0.5rem;
 }
