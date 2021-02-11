@@ -52,8 +52,12 @@ body {
     margin: 0.5rem;
 }
 
-nav {
+.nav-top {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);
+}
+
+.nav-bottom {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.125);
 }
 
 table .rounded {
@@ -85,7 +89,10 @@ table .rounded {
     color: blueviolet;
 }
 
-.track,.level,.result_ranking,.result_score {
+.track,
+.level,
+.result_ranking,
+.result_score {
     font-weight: bold;
 }
 
@@ -103,11 +110,24 @@ table .rounded {
     border-spacing: 0;
 }
 
-.table-rec{
-    margin:0;
+.table-rec {
+    margin: 0;
 }
 
-.collapse .table,.collapsing .table{
+.collapse .table,
+.collapsing .table {
     margin-top: 16px;
     padding: 0;
+}
+
+.ranking-1 {
+    background-color: gold;
+}
+
+.ranking-2 {
+    background-color: silver;
+}
+
+.ranking-3 {
+    background-color: chocolate;
 }

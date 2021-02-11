@@ -9,10 +9,13 @@ $(function () {
 
             // JSONデータを受信した後に実行する処理
             let output_html = ``;
+            output_html += `<div class="row">`
 
             for (let i = 0; i < data1[0].length; i++) {
+                if (i % 3 == 0) {};
+                output_html += `<div class="col-lg-6 col-xl-4">`
                 output_html += `<div class="card">`
-                output_html += `<h5 class="card-header">${data1[0][i].month}</h5>`;
+                output_html += `<h5 class="card-header">${data1[0][i].set_title}　${data1[0][i].month}</h5>`;
                 output_html += `<div class="card-body">`;
 
                 output_html += `<table class="table table-sm table-hover">`;
@@ -65,15 +68,17 @@ $(function () {
                 }
                 output_html += `</tbody>`;
                 output_html += `</table>`;
-
+                //primary
+                //warning
+                //danger
                 if (data1[0][i].rule != "") {
                     output_html += `<div class="alert alert-${data1[0][i].alert}" role="alert"><strong>LIFE：${data1[0][i].life}</strong>　${data1[0][i].rule}</div>`;
                 } else {
-                    output_html += `<div class="alert alert-primary" role="alert"><strong>LIFE：0</strong>　---</div>`;
+                    output_html += `<div class="alert alert-success" role="alert"><strong>LIFE：0</strong>　---</div>`;
                 };
 
                 output_html += `<hr>`;
-                output_html += `<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample${i}">Result Ranking</button>`;
+                output_html += `<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample${i}">Result Ranking</button>`;
 
                 output_html += `<div class="collapse" id="collapseExample${i}">`;
                 output_html += `<table class="table table-sm table-hover table-rec">`;
@@ -90,12 +95,15 @@ $(function () {
                         if (a.score > b.score) return -1;
                         if (a.score < b.score) return 1;
                     });
-
+                    var prescore = -1;
+                    var count = 0;
                     for (let j = 0; j < data2[0][i].record.length; j++) {
-                        var count = 0;
-                        count++;
+                        if (data2[0][i].record[j].score != prescore) {
+                            count++;
+                            prescore = data2[0][i].record[j].score;
+                        };
                         output_html += `<tr>`;
-                        output_html += `<td class="align-middle result_ranking">${j + 1}</td>`;
+                        output_html += `<td class="align-middle result_ranking ranking-${count}">${count}</td>`;
                         output_html += `<td class="align-middle result_name">${data2[0][i].record[j].name}</td>`;
 
                         if (data2[0][i].record[j].score >= 3022500) {
@@ -111,15 +119,16 @@ $(function () {
                         output_html += `<td class="align-middle result_score">${data2[0][i].record[j].score.toLocaleString()}</td>`;
                         output_html += `</tr>`;
                     };
-                    output_html += `</tbody>`;
-                    output_html += `</table>`;
-                    output_html += `</div>`;
                 };
+                output_html += `</tbody>`;
+                output_html += `</table>`;
+                output_html += `</div>`;
 
                 output_html += `</div>`;
                 output_html += `</div>`;
-
+                output_html += `</div>`;
             };
+            output_html += `</div">`
             $('.output').html(output_html);
         })
         .fail(function () {
