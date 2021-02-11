@@ -34,10 +34,10 @@ $(function () {
             output_html += `<table class="table table-sm table-hover">`;
             //output_html += `<caption>created ${data1[i].created.slice(0, 10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col" style="width:4%">#</th>`;
+            output_html += `<th scope="col" style="width:5%">#</th>`;
             output_html += `<th scope="col" colspan="2" style="width:64%">楽曲</th>`;
             output_html += `<th scope="col" style="width:20%">難易度</th>`;
-            output_html += `<th scope="col" style="width:12%">lv.</th>`;
+            output_html += `<th scope="col" style="width:15%">lv.</th>`;
             output_html += `</thead>`;
             output_html += `<tbody>`;
             for (let index = 0; index < 3; index++) {

@@ -47,6 +47,10 @@ body {
     font-size: 0.8em;
 }
 
+#wrap{
+    overflow: hidden;
+}
+
 .card,
 .list-group {
     margin: 0.5rem;
