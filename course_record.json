@@ -3,7 +3,7 @@
     "record": [{
         "name": "こたち",
         "score": 0,
-        "crear": true,
+        "crear": false,
         "date": ""
     }, {
         "name": "Ｆｒｅａｋ",
@@ -12,9 +12,9 @@
         "date": ""
     }, {
         "name": "Ｃｈｉｓａｋｉ",
-        "score": 2995550,
-        "crear": false,
+        "score": 3008566,
+        "crear": true,
         "date": ""
     }],
-    "update": "2021-02-11 22:45:23"
+    "update": "2021-02-12 22:11:17"
 }]
