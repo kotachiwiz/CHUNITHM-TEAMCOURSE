@@ -26,68 +26,104 @@ $(function () {
 
         for (let i = 0; i < data1.length; i++) {
             if (i % 3 == 0) {};
-            output_html += `<div class="col-lg-6 col-xl-4">`
+            output_html += `<div class="col-lg-6 col-xxl-4">`
             output_html += `<div class="card">`
             output_html += `<h5 class="card-header">${data1[i].set_title}　${data1[i].month}</h5>`;
             output_html += `<div class="card-body">`;
 
-            output_html += `<table class="table table-sm table-hover">`;
+            output_html += `<table class="table table-sm table-hover"  style="table-layout:fixed;">`;
             //output_html += `<caption>created ${data1[i].created.slice(0, 10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col" style="width:5%">#</th>`;
-            output_html += `<th scope="col" colspan="2" style="width:60%">楽曲</th>`;
-            output_html += `<th scope="col" style="width:20%">難易度</th>`;
-            output_html += `<th scope="col" style="width:15%">lv.</th>`;
+            output_html += `<th scope="col">Track 1</th>`;
+            output_html += `<th scope="col">Track 2</th>`;
+            output_html += `<th scope="col">Track 3</th>`;
             output_html += `</thead>`;
+
             output_html += `<tbody>`;
-            for (let index = 0; index < 3; index++) {
-                output_html += `<tr>`;
 
-                output_html += `<th class="align-middle track" scope="row">${data1[i].track[index].trackNo}</th>`;
-
-                if (data1[i].track[index].image != "") {
-                    output_html += `<td class="align-middle"  style="width:20%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data1[i].track[index].image}.jpg"></td>`;
+            output_html += `<tr>`; //2段目　画像
+            for (let k = 0; k < 3; k++) {
+                if (data1[i].track[0].image != "") {
+                    output_html += `<td class="align-middle"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data1[i].track[k].image}.jpg"></td>`;
                 } else {
-                    output_html += `<td class="align-middle"  style="width:20%"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
+                    output_html += `<td class="align-middle"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
                 };
+            }
+            output_html += `</tr>`;
 
-                if (data1[i].track[index].title != "") {
-                    output_html += `<td class="align-middle">${data1[i].track[index].title}</td>`;
+            output_html += `<tr>`; //3段目　楽曲名
+
+            String.prototype.bytes = function () {
+                var length = 0;
+                for (var i = 0; i < this.length; i++) {
+                    var c = this.charCodeAt(i);
+                    if ((c >= 0x0 && c < 0x81) || (c === 0xf8f0) || (c >= 0xff61 && c < 0xffa0) || (c >= 0xf8f1 && c < 0xf8f4)) {
+                        length += 1;
+                    } else {
+                        length += 2;
+                    }
+                }
+                return length;
+            };
+
+            for (let k = 0; k < 3; k++) {
+                console.log(data1[i].track[k].title.bytes())
+                if (data1[i].track[k].title != "" && data1[i].track[k].title.bytes() > 29) {
+                    output_html += `<td class="align-middle title-long">${data1[i].track[k].title}</td>`;
+                } else if (data1[i].track[k].title != "") {
+                    output_html += `<td class="align-middle">${data1[i].track[k].title}</td>`;
                 } else {
                     output_html += `<td class="align-middle">---</td>`;
                 };
+            }
+            output_html += `</tr>`;
 
-                if (data1[i].track[index].difficult != "") {
-                    if (data1[i].track[index].difficult == "MASTER") {
-                        output_html += `<td class="align-middle master">MAS</td>`;
-                    } else if (data1[i].track[index].difficult == "EXPERT") {
-                        output_html += `<td class="align-middle expert">EXP</td>`;
-                    } else if (data1[i].track[index].difficult == "ADVANCED") {
-                        output_html += `<td class="align-middle advanced">ADV</td>`;
-                    } else if (data1[i].track[index].difficult == "BASIC") {
-                        output_html += `<td class="align-middle basic">BAS</td>`;
+            output_html += `<tr>`; //4段目　難易度
+            for (let k = 0; k < 3; k++) {
+                if (data1[i].track[k].difficult != "") {
+                    if (data1[i].track[k].difficult == "MASTER") {
+                        output_html += `<td class="align-middle master">MASTER</td>`;
+                    } else if (data1[i].track[k].difficult == "EXPERT") {
+                        output_html += `<td class="align-middle expert">EXPERT</td>`;
+                    } else if (data1[i].track[k].difficult == "ADVANCED") {
+                        output_html += `<td class="align-middle advanced">ADVANCED</td>`;
+                    } else if (data1[i].track[k].difficult == "BASIC") {
+                        output_html += `<td class="align-middle basic">BASIC</td>`;
                     }
                 } else {
                     output_html += `<td class="align-middle">---</td>`;
                 };
-                if (data1[i].track[index].level != "") {
-                    output_html += `<td class="align-middle level">${data1[i].track[index].level.toFixed(1)}</td>`;
-                } else {
-                    output_html += `<td class="align-middle level">--.-</td>`;
-                };
-
-                output_html += `</tr>`;
-
             }
+
+            //小数点以下判定
+            function decimalPart(num, decDigits) {
+                var decPart = num - ((num >= 0) ? Math.floor(num) : Math.ceil(num));
+                return decPart.toFixed(decDigits);
+            }
+
+            output_html += `<tr>`; //5段目　レベル
+
+            for (let k = 0; k < 3; k++) {
+                if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) < 0.7) {
+                    output_html += `<td class="align-middle level">Lv. ${Math.floor(data1[i].track[k].level)} / ${data1[i].track[k].level.toFixed(1)}</td>`;
+                } else if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) >= 0.7) {
+                    output_html += `<td class="align-middle level">Lv. ${Math.floor(data1[i].track[k].level)}+ / ${data1[i].track[k].level.toFixed(1)})</td>`;
+                } else {
+                    output_html += `<td class="align-middle level">Lv. --- / ---</td>`;
+                };
+            }
+            output_html += `</tr>`;
+
             output_html += `</tbody>`;
             output_html += `</table>`;
             //primary
+            //success
             //warning
             //danger
             if (data1[i].rule != "") {
                 output_html += `<div class="alert alert-${data1[i].alert}" role="alert"><strong>LIFE：${data1[i].life}</strong>　${data1[i].rule}</div>`;
             } else {
-                output_html += `<div class="alert alert-success" role="alert"><strong>LIFE：0</strong>　---</div>`;
+                output_html += `<div class="alert alert-primary" role="alert"><strong>LIFE：0</strong>　---</div>`;
             };
 
             output_html += `<hr>`;

@@ -22,7 +22,7 @@
         "difficult": "MASTER",
         "level": 12.1
     }],
-    "alert":"success",
+    "alert":"primary",
     "life": 100,
     "rule": "ATTACK以下でLIFE -1"
 },{
