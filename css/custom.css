@@ -150,3 +150,8 @@ table .rounded {
 .btn-group{
     margin: 0.5rem;
 }
+
+.lv-num{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}

@@ -105,11 +105,11 @@ $(function () {
 
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) < 0.7) {
-                    output_html += `<td class="align-middle level">Lv. ${Math.floor(data1[i].track[k].level)} / ${data1[i].track[k].level.toFixed(1)}</td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) >= 0.7) {
-                    output_html += `<td class="align-middle level">Lv. ${Math.floor(data1[i].track[k].level)}+ / ${data1[i].track[k].level.toFixed(1)})</td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}+</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else {
-                    output_html += `<td class="align-middle level">Lv. --- / ---</td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">---</span>/<span class="lv-num">---</span></td>`;
                 };
             }
             output_html += `</tr>`;
