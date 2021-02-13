@@ -2,8 +2,8 @@
     "courseNo": 1,
     "record": [{
         "name": "こたち",
-        "score": 0,
-        "crear": false,
+        "score": 2989749,
+        "crear": true,
         "date": ""
     }, {
         "name": "Ｆｒｅａｋ",
@@ -16,5 +16,5 @@
         "crear": true,
         "date": ""
     }],
-    "update": "2021-02-12 22:11:17"
+    "update": "2021-02-13 21:24:47"
 }]
