@@ -162,7 +162,7 @@ $(function () {
                         prescore = course_result[0].record[j].score;
                     };
                     output_html += `<tr>`;
-                    output_html += `<td class="align-middle result_ranking ranking-${count}">${count}</td>`;
+                    output_html += `<td class="align-middle td-top result_ranking ranking-${count}">${count}</td>`;
                     output_html += `<td class="align-middle result_name">${course_result[0].record[j].name}</td>`;
 
                     if (course_result[0].record[j].score >= 3022500) {
