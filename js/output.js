@@ -44,7 +44,7 @@ $(function () {
             output_html += `<tr>`; //2段目　画像
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[0].image != "") {
-                    output_html += `<td class="align-middle"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data1[i].track[k].image}.jpg"></td>`;
+                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data1[i].track[k].image}.jpg"></td>`;
                 } else {
                     output_html += `<td class="align-middle"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
                 };

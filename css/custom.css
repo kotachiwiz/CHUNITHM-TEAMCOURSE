@@ -113,7 +113,11 @@ table .rounded {
     top: 0;
     z-index: 1;
     background-color: white;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table .td-top{
+    border-top: none;
 }
 
 .table {
