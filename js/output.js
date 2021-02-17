@@ -161,21 +161,27 @@ $(function () {
                         count++;
                         prescore = course_result[0].record[j].score;
                     };
+                    let tdtdtop = "";
+                    if (count == 1) {
+                        iftdtop = "td-top";
+                    } else {
+                        iftdtop = "";
+                    }
                     output_html += `<tr>`;
-                    output_html += `<td class="align-middle td-top result_ranking ranking-${count}">${count}</td>`;
-                    output_html += `<td class="align-middle result_name">${course_result[0].record[j].name}</td>`;
+                    output_html += `<td class="align-middle ${iftdtop} result_ranking ranking-${count}">${count}</td>`;
+                    output_html += `<td class="align-middle ${iftdtop} result_name">${course_result[0].record[j].name}</td>`;
 
                     if (course_result[0].record[j].score >= 3022500) {
-                        output_html += `<td class="align-middle result_rank">SSS</td>`;
+                        output_html += `<td class="align-middle ${iftdtop} result_rank">SSS</td>`;
                     } else if (course_result[0].record[j].score >= 3000000) {
-                        output_html += `<td class="align-middle result_rank">SS</td>`;
+                        output_html += `<td class="align-middle ${iftdtop} result_rank">SS</td>`;
                     } else if (course_result[0].record[j].score >= 2925000) {
-                        output_html += `<td class="align-middle result_rank">S</td>`;
+                        output_html += `<td class="align-middle ${iftdtop} result_rank">S</td>`;
                     } else {
-                        output_html += `<td class="align-middle result_rank"></td>`;
+                        output_html += `<td class="align-middle ${iftdtop} result_rank"></td>`;
                     };
 
-                    output_html += `<td class="align-middle result_score">${course_result[0].record[j].score.toLocaleString()}</td>`;
+                    output_html += `<td class="align-middle ${iftdtop} result_score">${course_result[0].record[j].score.toLocaleString()}</td>`;
                     output_html += `</tr>`;
                 };
             };
