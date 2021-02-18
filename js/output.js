@@ -12,11 +12,35 @@ $(function () {
                 data1 = data1_raw[0];
                 data2 = data2_raw[0];
                 console.log(data1, data2);
-                output();
+                data_create();
             })
             .fail(function () {
                 console.log("Error");
             });
+    };
+
+    function data_create() {
+        //chunirec API
+        /*var request = new XMLHttpRequest();
+                request.open('GET', `https://api.chunirec.net/1.3/music/showall.json?token=670bbf2e4d1120e05539152644a1a4eda09baa8e6656846bbf4a2ced3edb8f65`, true);
+                request.responseType = 'json';
+
+                request.onload = function () {
+                    var data_rec = this.response;
+
+            data1.forEach(data => {
+                for (let l = 0; l < 3; l++) {
+                    console.log(data.track[l].title);
+                    var data_rec_fil = data_rec.filter(data_rec => data_rec.meta.title == data.track[l].title);
+                    console.log(data_rec_fil[0].meta.id)
+                    data.track[l].id = data_rec_fil[0].meta.id;
+                }
+            });
+            console.log(data)
+        }
+        request.send();
+*/
+        output();
     };
 
     function output() {
@@ -24,8 +48,10 @@ $(function () {
         let output_html = ``;
         output_html += `<div class="row">`
 
+
         for (let i = 0; i < data1.length; i++) {
             if (i % 3 == 0) {};
+
             output_html += `<div class="col-lg-6 col-xxl-4">`
             output_html += `<div class="card">`
             output_html += `<h5 class="card-header">${data1[i].set_title}　${data1[i].month}</h5>`;
@@ -43,8 +69,9 @@ $(function () {
 
             output_html += `<tr>`; //2段目　画像
             for (let k = 0; k < 3; k++) {
+
                 if (data1[i].track[0].image != "") {
-                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/img/${data1[i].track[k].image}.jpg"></td>`;
+                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm.sega.jp/storage/jacket/${data1[i].track[k].image}.jpg"></td>`;
                 } else {
                     output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
                 };
