@@ -204,6 +204,8 @@ $(function () {
                         output_html += `<td class="align-middle ${iftdtop} result_rank">SS</td>`;
                     } else if (course_result[0].record[j].score >= 2925000) {
                         output_html += `<td class="align-middle ${iftdtop} result_rank">S</td>`;
+                    } else if (course_result[0].record[j].score >= 2850000) {
+                        output_html += `<td class="align-middle ${iftdtop} result_rank">AAA</td>`;
                     } else {
                         output_html += `<td class="align-middle ${iftdtop} result_rank"></td>`;
                     };
