@@ -54,7 +54,7 @@ $(function () {
 
             output_html += `<div class="col-lg-6 col-xxl-4">`
             output_html += `<div class="card">`
-            output_html += `<h5 class="card-header">${data1[i].set_title}　${data1[i].month}</h5>`;
+            output_html += `<h5 class="card-header font-weight-bold">${data1[i].set_title}　${data1[i].month}</h5>`;
             output_html += `<div class="card-body">`;
 
             output_html += `<table class="table table-sm table-hover"  style="table-layout:fixed;">`;
@@ -96,11 +96,11 @@ $(function () {
             for (let k = 0; k < 3; k++) {
                 console.log(data1[i].track[k].title.bytes())
                 if (data1[i].track[k].title != "" && data1[i].track[k].title.bytes() > 29) {
-                    output_html += `<td class="align-middle title-long">${data1[i].track[k].title}</td>`;
+                    output_html += `<td class="align-middle title-long font-weight-bold">${data1[i].track[k].title}</td>`;
                 } else if (data1[i].track[k].title != "") {
-                    output_html += `<td class="align-middle">${data1[i].track[k].title}</td>`;
+                    output_html += `<td class="align-middle font-weight-bold">${data1[i].track[k].title}</td>`;
                 } else {
-                    output_html += `<td class="align-middle">---</td>`;
+                    output_html += `<td class="align-middle font-weight-bold">---</td>`;
                 };
             }
             output_html += `</tr>`;
@@ -109,16 +109,16 @@ $(function () {
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].difficult != "") {
                     if (data1[i].track[k].difficult == "MASTER") {
-                        output_html += `<td class="align-middle master">MASTER</td>`;
+                        output_html += `<td class="align-middle master h6">MASTER</td>`;
                     } else if (data1[i].track[k].difficult == "EXPERT") {
-                        output_html += `<td class="align-middle expert">EXPERT</td>`;
+                        output_html += `<td class="align-middle expert h6">EXPERT</td>`;
                     } else if (data1[i].track[k].difficult == "ADVANCED") {
-                        output_html += `<td class="align-middle advanced">ADVANCED</td>`;
+                        output_html += `<td class="align-middle advanced h6">ADVANCED</td>`;
                     } else if (data1[i].track[k].difficult == "BASIC") {
-                        output_html += `<td class="align-middle basic">BASIC</td>`;
+                        output_html += `<td class="align-middle basic h6">BASIC</td>`;
                     }
                 } else {
-                    output_html += `<td class="align-middle">---</td>`;
+                    output_html += `<td class="align-middle h6">---</td>`;
                 };
             }
 
@@ -132,11 +132,11 @@ $(function () {
 
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) < 0.7) {
-                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
+                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) >= 0.7) {
-                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}+</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
+                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}+</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else {
-                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">---</span>/<span class="lv-num">---</span></td>`;
+                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">---</span>/<span class="lv-num">---</span></td>`;
                 };
             }
             output_html += `</tr>`;
