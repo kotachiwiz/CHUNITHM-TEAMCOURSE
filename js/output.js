@@ -60,9 +60,9 @@ $(function () {
             output_html += `<table class="table table-sm table-hover"  style="table-layout:fixed;">`;
             //output_html += `<caption>created ${data1[i].created.slice(0, 10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col" class="h6 font-weight-bold">Track 1</th>`;
-            output_html += `<th scope="col" class="h6 font-weight-bold">Track 2</th>`;
-            output_html += `<th scope="col" class="h6 font-weight-bold">Track 3</th>`;
+            output_html += `<th scope="col">Track 1</th>`;
+            output_html += `<th scope="col">Track 2</th>`;
+            output_html += `<th scope="col">Track 3</th>`;
             output_html += `</thead>`;
 
             output_html += `<tbody>`;
@@ -109,16 +109,16 @@ $(function () {
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].difficult != "") {
                     if (data1[i].track[k].difficult == "MASTER") {
-                        output_html += `<td class="align-middle master h6">MASTER</td>`;
+                        output_html += `<td class="align-middle master">MASTER</td>`;
                     } else if (data1[i].track[k].difficult == "EXPERT") {
-                        output_html += `<td class="align-middle expert h6">EXPERT</td>`;
+                        output_html += `<td class="align-middle expert">EXPERT</td>`;
                     } else if (data1[i].track[k].difficult == "ADVANCED") {
-                        output_html += `<td class="align-middle advanced h6">ADVANCED</td>`;
+                        output_html += `<td class="align-middle advanced">ADVANCED</td>`;
                     } else if (data1[i].track[k].difficult == "BASIC") {
-                        output_html += `<td class="align-middle basic h6">BASIC</td>`;
+                        output_html += `<td class="align-middle basic">BASIC</td>`;
                     }
                 } else {
-                    output_html += `<td class="align-middle h6">---</td>`;
+                    output_html += `<td class="align-middle">---</td>`;
                 };
             }
 
@@ -132,11 +132,11 @@ $(function () {
 
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) < 0.7) {
-                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else if (data1[i].track[k].level != "" && decimalPart(data1[i].track[k].level, 1) >= 0.7) {
-                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}+</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">${Math.floor(data1[i].track[k].level)}+</span>/<span class="lv-num">${data1[i].track[k].level.toFixed(1)}</span></td>`;
                 } else {
-                    output_html += `<td class="align-middle level h6">Lv.<span class="lv-num">---</span>/<span class="lv-num">---</span></td>`;
+                    output_html += `<td class="align-middle level">Lv.<span class="lv-num">---</span>/<span class="lv-num">---</span></td>`;
                 };
             }
             output_html += `</tr>`;
