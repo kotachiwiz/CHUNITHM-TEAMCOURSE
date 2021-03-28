@@ -60,9 +60,9 @@ $(function () {
             output_html += `<table class="table table-sm table-hover"  style="table-layout:fixed;">`;
             //output_html += `<caption>created ${data1[i].created.slice(0, 10)}</caption>`
             output_html += `<thead>`;
-            output_html += `<th scope="col">Track 1</th>`;
-            output_html += `<th scope="col">Track 2</th>`;
-            output_html += `<th scope="col">Track 3</th>`;
+            output_html += `<th scope="col" class="h6 font-weight-bold">Track 1</th>`;
+            output_html += `<th scope="col" class="h6 font-weight-bold">Track 2</th>`;
+            output_html += `<th scope="col" class="h6 font-weight-bold">Track 3</th>`;
             output_html += `</thead>`;
 
             output_html += `<tbody>`;
