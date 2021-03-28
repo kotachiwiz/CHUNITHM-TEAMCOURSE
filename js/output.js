@@ -96,11 +96,11 @@ $(function () {
             for (let k = 0; k < 3; k++) {
                 console.log(data1[i].track[k].title.bytes())
                 if (data1[i].track[k].title != "" && data1[i].track[k].title.bytes() > 29) {
-                    output_html += `<td class="align-middle title-long font-weight-bold">${data1[i].track[k].title}</td>`;
+                    output_html += `<td class="align-middle title-long">${data1[i].track[k].title}</td>`;
                 } else if (data1[i].track[k].title != "") {
-                    output_html += `<td class="align-middle font-weight-bold">${data1[i].track[k].title}</td>`;
+                    output_html += `<td class="align-middle">${data1[i].track[k].title}</td>`;
                 } else {
-                    output_html += `<td class="align-middle font-weight-bold">---</td>`;
+                    output_html += `<td class="align-middle">---</td>`;
                 };
             }
             output_html += `</tr>`;
