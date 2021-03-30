@@ -71,9 +71,9 @@ $(function () {
             for (let k = 0; k < 3; k++) {
 
                 if (data1[i].track[0].image != "") {
-                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm.sega.jp/storage/jacket/${data1[i].track[k].image}.jpg"></td>`;
+                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto frame_${data1[i].track[k].difficult.toLowerCase()}" src="https://chunithm.sega.jp/storage/jacket/${data1[i].track[k].image}.jpg"></td>`;
                 } else {
-                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto" src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
+                    output_html += `<td class="align-middle td-top"><img  class="rounded d-block mx-auto " src="https://chunithm-net.com/mobile/images/map_skill_none_icon.png"></td>`;
                 };
             }
             output_html += `</tr>`;
@@ -108,15 +108,7 @@ $(function () {
             output_html += `<tr>`; //4段目　難易度
             for (let k = 0; k < 3; k++) {
                 if (data1[i].track[k].difficult != "") {
-                    if (data1[i].track[k].difficult == "MASTER") {
-                        output_html += `<td class="align-middle master">MASTER</td>`;
-                    } else if (data1[i].track[k].difficult == "EXPERT") {
-                        output_html += `<td class="align-middle expert">EXPERT</td>`;
-                    } else if (data1[i].track[k].difficult == "ADVANCED") {
-                        output_html += `<td class="align-middle advanced">ADVANCED</td>`;
-                    } else if (data1[i].track[k].difficult == "BASIC") {
-                        output_html += `<td class="align-middle basic">BASIC</td>`;
-                    }
+                        output_html += `<td class="align-middle ${data1[i].track[k].difficult.toLowerCase()}">${data1[i].track[k].difficult}</td>`;
                 } else {
                     output_html += `<td class="align-middle">---</td>`;
                 };

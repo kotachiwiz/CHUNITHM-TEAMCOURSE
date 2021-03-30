@@ -82,22 +82,42 @@ table .rounded {
 
 .basic {
     font-weight: bold;
-    color: green;
+    color: #22ac38;
 }
 
 .advanced {
     font-weight: bold;
-    color: orange;
+    color: #f39800;
 }
 
 .expert {
     font-weight: bold;
-    color: crimson;
+    color: #e5004f;
 }
 
 .master {
     font-weight: bold;
-    color: blueviolet;
+    color: #af0bd2;
+}
+
+.frame_basic {
+    box-shadow: 0 0 0 1px #fff,
+    0 0 0 2px #22ac38;
+}
+
+.frame_advanced {
+    box-shadow: 0 0 0 1px #fff,
+    0 0 0 2px #f39800;
+}
+
+.frame_expert {
+    box-shadow: 0 0 0 1px #fff,
+    0 0 0 2px #e5004f;
+}
+
+.frame_master {
+    box-shadow: 0 0 0 1px #fff,
+    0 0 0 2px #af0bd2;
 }
 
 .track,
