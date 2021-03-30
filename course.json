@@ -49,7 +49,7 @@
         "difficult": "MASTER",
         "level": 13.3
     }],
-    "alert": "success",
+    "alert": "primary",
     "life": 100,
     "rule": "MISS判定でLIFE -1"
 
@@ -60,25 +60,25 @@
     "created": "",
     "track": [{
         "trackNo": 1,
-        "title": "",
-        "image": "",
-        "difficult": "",
-        "level": 0
+        "title": "エンドマークに希望と涙を添えて",
+        "image": "510bbe26",
+        "difficult": "EXPERT",
+        "level": 11.7
     }, {
         "trackNo": 2,
-        "title": "",
-        "image": "",
-        "difficult": "",
-        "level": 0
+        "title": "ワールズエンド・ダンスホール",
+        "image": "53cab513",
+        "difficult": "MASTER",
+        "level": 12.3
     }, {
         "trackNo": 3,
-        "title": "",
-        "image": "",
-        "difficult": "",
-        "level": 0
+        "title": "輪廻転生",
+        "image": "8e83980f",
+        "difficult": "MASTER",
+        "level": 12.7
     }],
     "alert": "success",
-    "life": 0,
-    "rule": ""
+    "life": 200,
+    "rule": "JUSTICE以下でLIFE -1"
 
 }]
