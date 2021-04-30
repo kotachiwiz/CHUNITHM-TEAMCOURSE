@@ -81,4 +81,32 @@
     "life": 200,
     "rule": "JUSTICE以下でLIFE -1"
 
+}, {
+    "courseNo": 4,
+    "set_title": "",
+    "month": "2021/05",
+    "created": "",
+    "track": [{
+        "trackNo": 1,
+        "title": "macrocosmos",
+        "image": "09a538e5",
+        "difficult": "EXPERT",
+        "level": 12.5
+    }, {
+        "trackNo": 2,
+        "title": "Trrricksters!!",
+        "image": "468231b7",
+        "difficult": "EXPERT",
+        "level": 12.7
+    }, {
+        "trackNo": 3,
+        "title": "World Vanquisher",
+        "image": "3d5e80e0",
+        "difficult": "EXPERT",
+        "level": 12.8
+    }],
+    "alert": "primary",
+    "life": 200,
+    "rule": "ATTACK以下でLIFE -1"
+
 }]
