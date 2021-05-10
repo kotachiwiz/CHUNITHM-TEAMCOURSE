@@ -3,18 +3,15 @@
     "record": [{
         "name": "こたち",
         "score": 2989749,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "フリーク",
         "score": 3025404,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "Ｃｈｉｓａｋｉ",
         "score": 3011785,
-        "crear": true,
-        "date": ""
+        "crear": true
     }],
     "update": "2021-02-27 23:59:10"
 }, {
@@ -22,23 +19,19 @@
     "record": [{
         "name": "こたち",
         "score": 2986083,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "フリーク",
         "score": 3016128,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "Ｃｈｉｓａｋｉ",
         "score": 2991790,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "魑魅魍《Ｒｙｏ》",
         "score": 3026845,
-        "crear": true,
-        "date": ""
+        "crear": true
     }],
     "update": "2021-03-30 23:54:41"
 }, {
@@ -46,33 +39,27 @@
     "record": [{
         "name": "こたち",
         "score": 2723044,
-        "crear": false,
-        "date": ""
+        "crear": false
     }, {
         "name": "フリーク",
         "score": 3024240,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "Ｃｈｉｓａｋｉ",
         "score": 1809122,
-        "crear": false,
-        "date": ""
+        "crear": false
     }, {
         "name": "ユメノハジマリ",
         "score": 3027522,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "ＺＥＮＣＨＡＮＧ",
         "score": 3021277,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "れもん",
         "score": 1487483,
-        "crear": false,
-        "date": ""
+        "crear": false
     }],
     "update": "2021-04-21 19:20:49"
 }, {
@@ -80,33 +67,27 @@
     "record": [{
         "name": "こたち",
         "score": 2975972,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "フリーク",
         "score": 0,
-        "crear": false,
-        "date": ""
+        "crear": false
     }, {
         "name": "Ｃｈｉｓａｋｉ",
         "score": 2239612,
-        "crear": false,
-        "date": ""
+        "crear": false
     }, {
         "name": "ユメノハジマリ",
         "score": 0,
-        "crear": false,
-        "date": ""
+        "crear": false
     }, {
         "name": "ＺＥＮＣＨＡＮＧ",
         "score": 3011524,
-        "crear": true,
-        "date": ""
+        "crear": true
     }, {
         "name": "れもん",
         "score": 2997313,
-        "crear": true,
-        "date": ""
+        "crear": true
     }],
     "update": "2021-05-10 19:09:06"
 }]
