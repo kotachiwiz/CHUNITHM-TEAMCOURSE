@@ -84,7 +84,7 @@
 }, {
     "courseNo": 4,
     "set_title": "",
-    "month": "2021/05",
+    "month": "2021/05 前半",
     "created": "",
     "track": [{
         "trackNo": 1,
@@ -108,5 +108,33 @@
     "alert": "primary",
     "life": 200,
     "rule": "ATTACK以下でLIFE -1"
+
+}, {
+    "courseNo": 5,
+    "set_title": "",
+    "month": "2021/05 後半",
+    "created": "",
+    "track": [{
+        "trackNo": 1,
+        "title": "有頂天ビバーチェ",
+        "image": "4b5e3d7c",
+        "difficult": "MASTER",
+        "level": 11.7
+    }, {
+        "trackNo": 2,
+        "title": "God knows...",
+        "image": "581c3282",
+        "difficult": "MASTER",
+        "level": 12.3
+    }, {
+        "trackNo": 3,
+        "title": "光線チューニング ～なずな妄想海フェスイメージトレーニングVer.～",
+        "image": "8bebde69",
+        "difficult": "MASTER",
+        "level": 12.5
+    }],
+    "alert": "primary",
+    "life": 500,
+    "rule": "JUSTICE以下でLIFE -1"
 
 }]
