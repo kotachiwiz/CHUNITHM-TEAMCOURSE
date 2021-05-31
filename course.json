@@ -137,4 +137,32 @@
     "life": 500,
     "rule": "JUSTICE以下でLIFE -1"
 
+}, {
+    "courseNo": 6,
+    "set_title": "",
+    "month": "2021/06",
+    "created": "",
+    "track": [{
+        "trackNo": 1,
+        "title": "Paradise Lost",
+        "image": "dd2e2a5a",
+        "difficult": "MASTER",
+        "level": 12.1
+    }, {
+        "trackNo": 2,
+        "title": "ツクヨミステップ",
+        "image": "e2b0d23c",
+        "difficult": "MASTER",
+        "level": 12.7
+    }, {
+        "trackNo": 3,
+        "title": "absolute rightness",
+        "image": "429ccd93",
+        "difficult": "MASTER",
+        "level": 13.4
+    }],
+    "alert": "primary",
+    "life": 200,
+    "rule": "MISS判定でLIFE -1"
+
 }]
