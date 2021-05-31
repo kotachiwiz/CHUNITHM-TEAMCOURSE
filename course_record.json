@@ -86,28 +86,20 @@
     "courseNo": 5,
     "record": [{
         "name": "こたち",
-        "score": 0,
-        "crear": false
-    }, {
-        "name": "フリーク",
-        "score": 0,
+        "score": 3021149,
         "crear": false
     }, {
         "name": "Ｃｈｉｓａｋｉ",
-        "score": 0,
-        "crear": false
-    }, {
-        "name": "ユメノハジマリ",
-        "score": 0,
+        "score": 3009393,
         "crear": false
     }, {
         "name": "ＺＥＮＣＨＡＮＧ",
-        "score": 0,
+        "score": 3021210,
         "crear": false
     }, {
         "name": "れもん",
-        "score": 0,
+        "score": 3007584,
         "crear": false
     }],
-    "update": ""
+    "update": "2021-06-01 00:12:36"
 }]
